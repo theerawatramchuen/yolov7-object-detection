@@ -1,0 +1,5 @@
+train: ./@void/train
+val: ./@void/val
+nc: 1
+names: ["void"]
+
