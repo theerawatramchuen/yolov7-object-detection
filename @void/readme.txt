@@ -1,7 +1,7 @@
 # Script for model development
 ## Training the model
 $ cd yolov7
-$ python train.py --weights yolov7.pt --data "@void/custom.yaml" --workers 4 --batch-size 4 --img 416 --cfg @void/yolov7-tiny-void.yaml --name void --hyp data/hyp.scratch.p5.yaml --epochs 300
+$ python train.py --weights yolov7.pt --data "@void/custom.yaml" --workers 4 --batch-size 4 --img 416 --cfg @void/yolov7-void.yaml --name void --hyp data/hyp.scratch.p5.yaml --epochs 300
 
 ## Start Tensorboard session
 ### Please Open another terminal dir yolov7
