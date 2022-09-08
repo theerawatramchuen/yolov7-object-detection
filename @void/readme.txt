@@ -1,7 +1,7 @@
 # Script for model development
 ## Training the model
 $ cd yolov7
-$ python train.py --weights yolov7.pt --data "@void/custom.yaml" --workers 4 --batch-size 4 --img 416 --cfg @void/yolov7-void.yaml --name yolov7 --hyp data/hyp.scratch.p5.yaml --epochs 300
+$ python train.py --weights yolov7.pt --data "@void/custom.yaml" --workers 2 --batch-size 2 --img 416 --cfg @void/yolov7-void.yaml --name void --hyp data/hyp.scratch.p5.yaml --epochs 1000
 
 ## Start Tensorboard session
 ### Please Open another terminal dir yolov7
@@ -10,7 +10,7 @@ $ tensorboard --logdir runs/train
 
 ## Inference with new model
 $ cd yolov7
-$ python3 detect.py --weights runs/train/exp/weights/best.pt --conf-thres 0.7 --source @void/obj_train_data
+$ python detect.py --weights runs/train/void/weights/best.pt --conf-thres 0.7 --source @void/obj_train_data
 
 
 
