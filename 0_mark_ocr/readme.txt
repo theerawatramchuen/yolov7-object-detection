@@ -1,11 +1,9 @@
 # Script for model development
 ## Training the model
-## [Option] To fix cuda not available : 
-##           $ pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
-## [Option] To fix AttributeError: module 'distutils' has no attribute 'version' : with setuptools 59.6.0 #69894 : 
-##           $ pip install setuptools==59.5.0     
+## Option : $ pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html          ### fixed cuda not available
+## Option : $ pip install setuptools==59.5.0                ### fixed AttributeError: module 'distutils' has no attribute 'version' : with setuptools 59.6.0 #69894
 $ cd yolov7
-$ python train.py --weights yolov7.pt --data 0_mark_ocr/custom.yaml --device 0 --workers 1 --batch-size 2 --img 416 --cfg 0_mark_ocr/yolov7-2c.yaml --name mark --hyp data/hyp.scratch.p5.yaml --save_period 50  --epochs 10000 [--resume]
+$ python train.py --weights yolov7.pt --data 0_mark_ocr/custom.yaml --device 0 --workers 1 --batch-size 2 --img 416 --cfg 0_mark_ocr/yolov7-2c.yaml --name mark --hyp data/hyp.scratch.p5.yaml --save_period 50  --epochs 500 --resume
 
 ## Start Tensorboard session
 ### Please Open another terminal dir yolov7
