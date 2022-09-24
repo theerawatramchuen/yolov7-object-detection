@@ -12,7 +12,7 @@ $ tensorboard --logdir runs/train
 
 ## Inference with new model
 $ cd yolov7
-$ python detect.py --weights runs/train/mark10/weights/best.pt --conf-thres 0.7 --source @mark_ocr/obj_train_data
+$ python detect.py --weights runs/train/mark10/weights/best.pt --conf-thres 0.7 --source 0_mark_ocr/obj_train_data
 
 
 
