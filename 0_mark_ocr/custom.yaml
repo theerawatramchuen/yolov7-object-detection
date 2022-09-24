@@ -1,0 +1,5 @@
+train: 0_mark_ocr/train
+val: 0_mark_ocr/val
+nc: 2
+names: ["char","logo"]
+
