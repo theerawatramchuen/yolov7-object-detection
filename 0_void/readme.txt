@@ -2,6 +2,7 @@
 ## Training the model
 $ cd yolov7
 $ python train.py --weights yolov7.pt --data 0_void/custom.yaml --workers 2 --batch-size 2 --img 416 --cfg 0_void/yolov7-void.yaml --name void --hyp data/hyp.scratch.p5.yaml --epochs 1000
+$ python train.py --weights runs/train/void-tiny/weights/epoch_3999.pt --data 0_void/custom.yaml --workers 2 --batch-size 2 --img 416 --cfg 0_void/yolov7-tiny-void.yaml --name void-tiny-5000s --hyp data/hyp.scratch.p5.yaml --epochs 1000 --nosave
 
 ## Start Tensorboard session
 ### Please Open another terminal dir yolov7
